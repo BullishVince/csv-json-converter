@@ -11,7 +11,7 @@ console.log('Running application...');
 
 if (String(argv.i).includes('.csv')) {
     json = converter.convertToJson(argv.i);
-    fs.writeFile(argv.o, json, err => {
+    fs.writeFile(argv.o, String(json), err => {
         if (err) {
           console.error(err);
           return;

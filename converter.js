@@ -21,8 +21,7 @@ const convertToJson = input => {
 
             result.push(obj)
         })
-        console.log(result);
-        return result;
+        return JSON.stringify(result);
       })
 }
 
